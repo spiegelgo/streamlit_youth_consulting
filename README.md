@@ -6,8 +6,8 @@
 지역별 최소값 최대값 의 상담유형<br/>
 전국별 최소값 최대값의 상담유형 등의 데이터를 알아보자<br/><br/>
 
-해당 데이터는 <br/>
-https://www.bigdata-culture.kr/bigdata/user/data_market/detail.do?id=6aa14c34-4866-4a3f-9223-09c12d58ad4b<br/>
+해당 데이터는 [문화 빅데이터 플랫폼](
+https://www.bigdata-culture.kr/bigdata/user/data_market/detail.do?id=6aa14c34-4866-4a3f-9223-09c12d58ad4b, '문화 빅데이터 플랫폼')<br/>
 에서 받았으며 2019와 2020 모두 같은 데이터였기 때문에 2019만 사용됐으며<br/>
 해당 데이터의 합계 데이터와 전체상담수 데이터가 알맞지않아<br/>
 삭제 후에 남아있는 데이터들을 sum으로 다시 채워넣었음<br/><br/>
