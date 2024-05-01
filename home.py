@@ -7,3 +7,4 @@ def run_home():
     st.text('지역별 상담 유형 통계 정보(2019).csv 파일과')
     st.text('지역별 상담 유형 통계 정보(2020).csv 파일을 통해 만들어졌습니다')
     st.link_button('해당 데이터셋은 이 곳에서 받았습니다','https://www.bigdata-culture.kr/bigdata/user/data_market/detail.do?id=6aa14c34-4866-4a3f-9223-09c12d58ad4b')
+    st.image('./image/consulting.png',use_column_width = True)
