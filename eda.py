@@ -6,16 +6,17 @@ from matplotlib import font_manager, rc
 import plotly.express as px
 
 
-# 한글 폰트 설정
-font_path = "./data/NANUMGOTHIC.TTF"  # 한글 폰트 경로 
-# 윈도우에 있는 기본 폰트로 하려 했으나 설정이 다른 컴퓨터에서 해본 결과
-# 폰트를 찾지 못하는 일이 발생하여 data 폴더 안에 폰트를 하나 넣었다
-font_name = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font_name)
 
 
 def run_eda():
     
+    # 한글 폰트 설정
+    import platform
+    from matplotlib import font_manager, rc
+    plt.rcParams['axes.unicode_minus'] = False
+    if platform.system() == 'Linux':
+        rc('font', family='NanumGothic')
+            
     st.subheader('데이터프레임 확인하기')
     df = pd.read_csv('./data/youth_consulting.csv', index_col=0)
     #print(df)
