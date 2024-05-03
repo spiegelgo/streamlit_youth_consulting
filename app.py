@@ -3,7 +3,7 @@ from home import run_home
 from eda import run_eda
 
 def main():
-    st.title('지역별 청소년 고민 상담 유형 분석')
+    st.title('청소년 고민 상담 유형 분석')
     
     menu = ['Home','EDA']
     choice = st.sidebar.selectbox('메뉴',menu)

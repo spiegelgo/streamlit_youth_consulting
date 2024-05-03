@@ -1,7 +1,7 @@
 import streamlit as st
 
 def run_home():
-    st.subheader('지역별, 상담유형별로 청소년 상담현황을 알아보자')
+    st.subheader('지역별, 상담유형별로 청소년 고민상담 현황을 알아보자')
     
     st.text("'한국청소년활동진흥원'에서 제공한")
     st.text('지역별 상담 유형 통계 정보(2019).csv 파일을 통해 만들어졌습니다')

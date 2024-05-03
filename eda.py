@@ -19,8 +19,6 @@ def run_eda():
             
     st.subheader('전체 데이터프레임 확인')
     df = pd.read_csv('./data/youth_consulting.csv', index_col=0)
-    #print(df)
-    
     st.dataframe(df)
 
     st.subheader('상담유형별 지역순 시각화')
@@ -38,6 +36,8 @@ def run_eda():
         selected_df = df_filtered[selected_columns + ['지역']]  # '지역' 열을 포함하여 선택된 열만 필터링
         selected_df.set_index('지역', inplace=True)  # '지역'을 인덱스로 설정
         st.write(selected_df)
+        st.subheader('시각화')
+        st.text('위에서 선택한 상담 유형을 차트로 확인하자')
         # 선택한 컬럼과 '지역' 컬럼의 데이터 시각화
         for column in selected_columns:
             # 바 차트 그리기
