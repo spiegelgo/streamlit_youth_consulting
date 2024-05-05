@@ -5,7 +5,7 @@ from eda import run_eda
 def main():
     st.title('청소년 고민 상담 유형 분석')
     
-    menu = ['Home','EDA']
+    menu = ['Home','청소년 고민상담유형']
     choice = st.sidebar.selectbox('메뉴',menu)
     
     if choice == menu[0]:
